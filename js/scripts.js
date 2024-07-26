@@ -1,14 +1,13 @@
-/*!
-* Start Bootstrap - Grayscale v7.0.6 (https://startbootstrap.com/theme/grayscale)
-* Copyright 2013-2023 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-grayscale/blob/master/LICENSE)
-*/
-//
-// Scripts
-// 
-
 window.addEventListener('DOMContentLoaded', event => {
 
+    var typed = new Typed(".auto-type", 
+        {strings: ["Alex Daniels","Rufat Babayev","AGI", "Sylvie"],
+         typeSpeed: 150,
+         backSpeed: 150,
+         loop: true
+
+
+    });
     // Navbar shrink function
     var navbarShrink = function () {
         const navbarCollapsible = document.body.querySelector('#mainNav');
