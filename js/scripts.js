@@ -1,9 +1,9 @@
 window.addEventListener('DOMContentLoaded', event => {
 
     var typed = new Typed(".auto-type", 
-        {strings: ["Alex Daniels","Rufat Babayev","AGI", "Sylvie"],
-         typeSpeed: 150,
-         backSpeed: 150,
+        {strings: ["Alex Daniels","AGI", "Sylvie"],
+         typeSpeed: 200,
+         backSpeed: 200,
          loop: true
 
 
@@ -21,10 +21,8 @@ window.addEventListener('DOMContentLoaded', event => {
         }
 
     };
-
     // Shrink the navbar 
     navbarShrink();
-
     // Shrink the navbar when page is scrolled
     document.addEventListener('scroll', navbarShrink);
 
