@@ -1,13 +1,16 @@
 window.addEventListener('DOMContentLoaded', event => {
 
+    const d = new Date();
+    let year = d.getFullYear();
+    document.getElementById("current-year").innerHTML = year;
+    
     var typed = new Typed(".auto-type", 
         {strings: ["Alex Daniels","AGI", "Sylvie"],
          typeSpeed: 200,
          backSpeed: 200,
          loop: true
-
-
     });
+
     // Navbar shrink function
     var navbarShrink = function () {
         const navbarCollapsible = document.body.querySelector('#mainNav');
