@@ -11204,3 +11204,6 @@ body {
   white-space: nowrap;
 }
 
+#project1_img {
+  transition: opacity 1s;
+}

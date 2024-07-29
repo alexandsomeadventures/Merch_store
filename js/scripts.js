@@ -3,13 +3,28 @@ window.addEventListener('DOMContentLoaded', event => {
     const d = new Date();
     let year = d.getFullYear();
     document.getElementById("current-year").innerHTML = year;
-    
+
     var typed = new Typed(".auto-type", 
         {strings: ["Alex Daniels","AGI", "Sylvie"],
          typeSpeed: 200,
          backSpeed: 200,
          loop: true
     });
+
+    const changingImages = [
+        "assets/img/sylvie_screen3.png", "assets/img/sylvie_screen2.png", "assets/img/sylvie_screen1.png",
+    ];
+    var imageIndex = 0;
+    const imgElement = document.getElementById('project1_img');
+    setInterval(() => {
+        imgElement.style.opacity = 0; // Start fade-out
+        setTimeout(() => {
+            imageIndex = (imageIndex + 1) % changingImages.length; // Update image index
+            imgElement.src = changingImages[imageIndex]; // Change image source
+            imgElement.style.opacity = 1; // Start fade-in
+        }, 1000); // Wait for fade-out to complete (same duration as CSS transition)
+    }, 3000); // Interval duration for changing images
+
 
     // Navbar shrink function
     var navbarShrink = function () {
